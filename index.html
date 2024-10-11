@@ -19,50 +19,36 @@
   <body class="leading-normal tracking-normal text-white gradient" style="font-family: 'Source Sans Pro', sans-serif;">
     <nav id="header" class="fixed w-full z-30 top-0 text-white">
       <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
-        <div class="pl-4 flex items-center">
+        <!-- Logo and title -->
+        <div class="pl-4 flex items-center justify-between w-full space-x-8"> <!-- Added space-x-8 here for spacing -->
           <a class="sandeep toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
             <img src="logo.png" alt="logo" class="responsive-img">
             buggMaker
           </a>
+    
+          <!-- WhatsApp and Facebook icons stay next to the title -->
+          <div class="flex space-x-4">  <!-- Flex container for the icons, space-x-4 adds spacing between icons -->
+            <button
+              id="facebookAction"
+              onclick="window.open('https://www.facebook.com/people/BUG-MAKER/61566491773889/?mibextid=LQQJ4d')"
+              class="facebook-btn flex items-center justify-center bg-transparent text-white font-bold">
+              <img src="facebook.png" alt="Facebook Icon" class="w-12 h-12 rounded-full">
+            </button>
+            
+            <button
+              id="whatsappAction"
+              onclick="window.open('https://wa.me/919696453856', '_blank')"
+              class="whatsapp-btn flex items-center justify-center bg-transparent text-white font-bold">
+              <img src="whatsapp.png" alt="WhatsApp Icon" class="w-12 h-12 rounded-full">
+            </button>
+          </div>
         </div>
-        <div class="block lg:hidden pr-4">
-          <button id="nav-toggle" class="flex items-center p-1 text-pink-800 hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-            <svg class="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="https://www.w3.org/2000/svg">
-              <title>Menu</title>
-              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-          </svg>          
-          </button>
-        </div>
-        <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20" id="nav-content">
-          <ul class="list-reset lg:flex justify-end flex-1 items-center">
-            <li class="mr-3">
-              <button
-                  id="navAction"
-                  onclick="window.open('mailto:sandeepiitian7575@gmail.com')"
-                  class="email-btn flex items-center justify-center bg-green-500 text-white font-bold rounded-full py-2 px-4 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out ml-3">
-                  Email
-              </button>
-          </li>
-              <br>   
-            <li class="mr-3">
-              <button
-                  id="navAction"
-                  onclick="window.open('https://www.facebook.com/people/BUG-MAKER/61566491773889/?mibextid=LQQJ4d')" 
-                  class="facebook-btn flex items-center justify-center bg-green-500 text-white font-bold rounded-full py-2 px-4 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out ml-3">Facebook
-               </button>
-            </li>  
-              <br>
-          </ul>
-          <button
-                 id="navAction"
-                onclick="window.open('https://wa.me/919696453856', '_blank')" 
-                class="whatsapp-btn flex items-center justify-center bg-green-500 text-white font-bold rounded-full py-2 px-4 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out ml-3">
-              <i class="fab fa-whatsapp text-white mr-2"></i> WhatsApp
-        </button>
-        </div>        
       </div>
       <hr class="border-b border-gray-100 opacity-25 my-0 py-0" />
     </nav>
+    
+    
+    
     
     <!--Hero-->
     <div class="pt-24">
@@ -70,7 +56,10 @@
         <!--Left Col-->
         <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
           <p class="uppercase tracking-loose w-full font-bold" style="font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 24px; color: #FFFFFF;">
-            Your Vision, Our Expertise: Create Something That Truly Stands Out.
+            Your Vision, Our Expertise 
+          </p>
+          <p class="uppercase tracking-loose w-full font-bold" style="font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 24px; color: #FFFFFF;">
+            Create Something That Truly Stands Out.
           </p>
           <div style="display: inline;">
             <span class="typewriter" data-words="WEBSITE,DESIGN,AND,DEVELOPMENT" data-speed="100" data-delete-speed="50" data-loop="0" data-colors="black,black,black,black"></span>
@@ -81,7 +70,7 @@
         </div>
         <!--Right Col-->
         <div class="w-full md:w-3/5 py-6 text-center">
-          <img class="w-full md:w-4/5 z-50" src="hero.png" />
+          <img class="w-full md:w-4/5 z-50" src="herro.png" />
         </div>
       </div>
     </div>
@@ -98,7 +87,7 @@
         <div class="flex flex-wrap mb-12">
           <div class="w-5/6 sm:w-1/2 p-6">
             <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
-              Accelerating Your Business Growth with Fantastic Websites
+              Boost Your Business with Stunning Websites
             </h3>
             <p class="text-gray-600 mb-8">
               At BuggMaker, we create stunning, user-friendly websites tailored to your unique vision. Our goal is to help your business thrive with seamless web solutions that not only look great but also perform efficiently. We specialize in Search Engine Optimization (SEO) to ensure your site ranks higher and attracts the right audience. Let us bring your ideas to life and add your personal touch, making your online presence truly remarkable.
