@@ -123,6 +123,14 @@
     display: inline-block;
   }
   
+
+.block-upward {
+    margin-bottom: 20px;
+}
+
+.block-downward {
+    margin-top: 20px;
+}
   .team-section {
     padding-top: 5px;
     font-weight:bolder ;
@@ -139,7 +147,7 @@
   }
   
   .team-member {
-    text-align: center;
+    /* text-align: center; */
     color: black;
     background-color: white;
     border-radius: 8px;
@@ -159,13 +167,14 @@
 }
   
   h2 {
-    
+    text-align: center;
     font-size: xx-large;
     color:black; /* Corrected property */
     font-size: 26px; /* Increase size */
   }
   
   h3 {
+    text-align: center;
     color: rgb(57, 99, 214);
     font-size: 20px; /* Increase size */
   }
@@ -175,6 +184,7 @@
     font-size: 16px; /* Increase size */
   }
   .quali{ 
+    
     font-weight: lighter ;
     color: black;
   }
