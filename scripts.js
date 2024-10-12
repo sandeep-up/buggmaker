@@ -1,5 +1,30 @@
 
+function toggleAccordion(element) {
+    // Get all the panels and icons
+    const allPanels = document.querySelectorAll(".panel");
+    const allIcons = document.querySelectorAll(".accordion .icon");
 
+    // Find the panel corresponding to the clicked accordion
+    const panel = element.nextElementSibling;
+    const icon = element.querySelector(".icon");
+
+    // Close all other panels and reset icon rotation
+    allPanels.forEach(p => {
+        if (p !== panel) {
+            p.classList.remove("show");
+        }
+    });
+
+    allIcons.forEach(i => {
+        if (i !== icon) {
+            i.classList.remove("rotate-180");
+        }
+    });
+
+    // Toggle the visibility of the selected panel and rotate the icon
+    panel.classList.toggle("show");
+    icon.classList.toggle("rotate-180");
+}
 
 class TextTyper {
     constructor(element) {
@@ -115,6 +140,8 @@ document.addEventListener("scroll", function () {
         navcontent.classList.add("bg-gray-100");
     }
 });
+
+
 
 
 
